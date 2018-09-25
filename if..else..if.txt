@@ -1,0 +1,23 @@
+<body>
+      <script>
+              var useName = prompt(" Who's there?");
+              var isAdmin = useName ==='admin';
+              var isUserNameEmpty = useName === '';
+              if(isAdmin) {
+                var password = prompt("Password?");
+                var isPasswordCorrect = password === 'TheMaster';
+                var isPasswordEmpty = password === '';
+                if (isPasswordCorrect) {
+                  alert('Well Come!!!');
+                } else if (isPasswordEmpty) {
+                  alert('Canceled');
+                } else {
+                  alert('Wrong password!');
+                }
+              } else if (isUserNameEmpty) {
+                  alert ('Canceled.');
+              } else {
+                  alert ("I dont' know you");
+              }
+      </script>
+</body>
